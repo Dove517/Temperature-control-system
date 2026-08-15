@@ -1,2 +1,12 @@
-# Temperature-control-system
-Fan control software for Dell G-series and Alienware laptops. 一个用于dell g系列/外星人系列笔记本风扇控制软件。
+# `Temperature Control System(TCS)`
+
+TCS是一款基于 [tcc-g15](https://github.com/AlexIII/tcc-g15) 的温度调控软件，用于替换AWCC软件，部分代码由CodeX完成。
+
+## 🚧特别提醒
+
+本程序没有编写热键功能，当前仅能通过托盘程序或UI手动进入G模式。
+此外，在测试使用中发现无论是AWCC还是tcc-g15均存在调温百分比不匹配风扇实际转速问题，例如在我的G15 5511中，满载CPU-4400RPM/GPU-4700RPM，固定转速为60%情况下，CPU转速会拉到3000+RPM，所以怀疑是机器特性。（考虑减去一个补偿速度？）
+
+### 相较于tcc-g15有何不同？
+
+本程序将自定义模式调整为根据温控曲线调整风速，将原自定义模式（固定速度）调整为固定模式。
